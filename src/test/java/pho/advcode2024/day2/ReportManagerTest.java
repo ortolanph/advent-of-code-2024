@@ -18,7 +18,7 @@ class ReportManagerTest {
 
     @BeforeEach
     void setup() throws IOException {
-        reportManager = new ReportManager(ContentLoader.load("examples/day02.txt"));
+        reportManager = new ReportManager("examples/day02.txt");
     }
 
     @Test
@@ -73,7 +73,7 @@ class ReportManagerTest {
 
     @Test
     void should_count_safe_reports() {
-        long actual = reportManager.countSafeReports();
+        long actual = reportManager.answerOne();
         long expected = 2;
 
         assertThat(actual, equalTo(expected));
