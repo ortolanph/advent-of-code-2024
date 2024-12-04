@@ -1,8 +1,7 @@
-package pho.advcode2024.day2;
+package pho.advcode2024.day02;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pho.advcode2024.core.ContentLoader;
 
 import java.io.IOException;
 import java.util.List;
@@ -18,7 +17,7 @@ class ReportManagerTest {
 
     @BeforeEach
     void setup() throws IOException {
-        reportManager = new ReportManager(ContentLoader.load("examples/day02.txt"));
+        reportManager = new ReportManager("examples/day02.txt");
     }
 
     @Test
@@ -73,7 +72,7 @@ class ReportManagerTest {
 
     @Test
     void should_count_safe_reports() {
-        long actual = reportManager.countSafeReports();
+        long actual = reportManager.answerOne();
         long expected = 2;
 
         assertThat(actual, equalTo(expected));
