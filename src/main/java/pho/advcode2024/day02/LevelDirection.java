@@ -1,4 +1,4 @@
-package pho.advcode2024.day2;
+package pho.advcode2024.day02;
 
 public enum LevelDirection {
     INCREASING,

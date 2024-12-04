@@ -1,4 +1,4 @@
-package pho.advcode2024.day1;
+package pho.advcode2024.day01;
 
 import pho.advcode2024.engine.Challenge;
 import pho.advcode2024.engine.ChallengeLabels;
@@ -15,7 +15,13 @@ public class Library extends Challenge {
     private final List<Integer> rightList;
 
     public Library(String fileName) throws IOException {
-        super(fileName, new ChallengeLabels(1, "Library Lists", "Distance Score", "Similarity Score"));
+        super(fileName, new ChallengeLabels(
+            1,
+            "Library Lists",
+            "Distance Score",
+            "Similarity Score"
+        ));
+
         List<String[]> lists = extractMainList();
 
         leftList = extractSideList(lists, LEFT);

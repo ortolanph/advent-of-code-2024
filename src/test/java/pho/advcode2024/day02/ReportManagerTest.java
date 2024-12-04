@@ -1,8 +1,7 @@
-package pho.advcode2024.day2;
+package pho.advcode2024.day02;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pho.advcode2024.core.ContentLoader;
 
 import java.io.IOException;
 import java.util.List;

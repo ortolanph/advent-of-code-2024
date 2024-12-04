@@ -1,4 +1,4 @@
-package pho.advcode2024.day2;
+package pho.advcode2024.day02;
 
 import pho.advcode2024.engine.Challenge;
 import pho.advcode2024.engine.ChallengeLabels;
@@ -13,7 +13,12 @@ public class ReportManager extends Challenge {
     private static final Integer ALLOWED_DIFFERENCE = 3;
 
     public ReportManager(String fileName) throws IOException {
-        super(fileName, new ChallengeLabels(2, "Report Manager", "Safe Reports", "Safe Reports with Dampener"));
+        super(fileName, new ChallengeLabels(
+            2,
+            "Report Manager",
+            "Safe Reports",
+            "Safe Reports with Dampener"
+        ));
     }
 
     @Override

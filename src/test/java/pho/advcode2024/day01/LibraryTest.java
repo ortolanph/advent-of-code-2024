@@ -1,8 +1,7 @@
-package pho.advcode2024.day1;
+package pho.advcode2024.day01;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pho.advcode2024.engine.Challenge;
 
 import java.io.IOException;
 
@@ -10,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LibraryTest {
 
-    private Challenge library;
+    private Library library;
 
     @BeforeEach
     void setup() throws IOException {
