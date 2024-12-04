@@ -1,6 +1,5 @@
 package pho.advcode2024.day03;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -12,17 +11,21 @@ class CorruptedComputerTest {
 
     private CorruptedComputer corruptedComputer;
 
-    @BeforeEach
-    void setup() throws IOException {
-        corruptedComputer = new CorruptedComputer("examples/day03.txt");
-    }
-
     @Test
-    void should_calculate_sum_multiplications() {
+    void should_calculate_sum_multiplications() throws IOException {
+        corruptedComputer = new CorruptedComputer("examples/day03a.txt");
         long actual = corruptedComputer.answerOne();
         long expected = 161;
 
         assertThat(actual, equalTo(expected));
     }
 
+    @Test
+    void should_calculate_sum_multiplications_with_do_and_dont() throws IOException {
+        corruptedComputer = new CorruptedComputer("examples/day03b.txt");
+        long actual = corruptedComputer.answerTwo();
+        long expected = 48;
+
+        assertThat(actual, equalTo(expected));
+    }
 }
